@@ -10,8 +10,5 @@ def sprint(str):
 
 sprint('Cosa devo mettere nel codice QR?')
 x = input()
-if x == "textFile" :
-  img= qrcode.make(textData)
-else :
-  img= qrcode.make(x)
+img= qrcode.make(x)
 img.save(dir + "\output-qr.png")
